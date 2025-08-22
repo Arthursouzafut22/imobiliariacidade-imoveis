@@ -1,0 +1,106 @@
+@import "../padrao";
+
+.card_funcionario {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #CCCC;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+
+    .head-card {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        height: 200px;
+        background-color: #004e7e;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    img {
+        border-radius: 100%;
+        margin-top: -150px;
+    }
+
+    .card_funcionario_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    strong {
+        font-size: 1.5rem;
+        align-self: center;
+    }
+    .info-func{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: .5rem;
+    }
+    svg{
+        width: 24px;
+    }
+}
+
+
+// -----------------------------------------------------------
+
+.titulo_modal {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wrap_imagem{
+    display: flex;
+    justify-content: center;
+}
+
+#img_modal{
+    max-width: 200px;
+    border-radius: 100%;
+}
+
+#fechar-modal{
+    width: 100%;
+}
+
+#exampleModal {
+    //margin: auto;
+    .modal-content {
+        top: 5%;
+        width: 70%;
+        margin: auto;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            top: 0px;
+            // height: 100%;
+            z-index: 999999;
+        }
+    }
+}
+
+#fechar-modal {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.modal.show .modal-dialog {
+    margin: auto !important;
+    height: 100%;
+    /* width: 100%!important; */
+    /*background: red;*/
+}
+
+.modal-footer {
+    display: block;
+}

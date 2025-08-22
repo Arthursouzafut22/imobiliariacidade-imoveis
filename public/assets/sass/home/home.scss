@@ -1,0 +1,437 @@
+@import "../padrao";
+
+#carrossel_blog .slick-list {
+    min-width: 100% !important;
+}
+#carrossel_blog .slick-slide {
+    
+}
+
+
+.teaser {
+    opacity: 1;
+    transition: opacity 3s;
+}
+//BOTOES DE DESTAQUES
+%base-buttom-destaque {
+    font-weight: 0;
+    font-family: $cor-dark2;
+    font-size: 14px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #3a405b;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: none;
+
+    
+    @media(max-width:700px){
+        font-size: 14px;
+        max-width: 150px;
+        width: auto;
+    }
+
+}
+
+.buttom-destaque {
+    @extend %base-buttom-destaque;
+
+
+    &:hover {
+        background-color: $cor-dark;
+        border: none;
+    }
+    &:active {
+        background-color: $cor-dark;
+        border: none;
+    }
+}
+
+.buttom-destaque {
+    @extend %base-buttom-destaque;
+
+    &:focus {
+        color: #FFF;
+        border: none !important;
+    }
+}
+
+
+#container_mais_filtros {
+
+    .nav-pills .nav-link {
+        font-size: 1rem;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        // background-color: $cor-primaria;        
+    }
+    .botoes_lista_imoveis_home {
+        width: max-content;
+        margin: 0 auto;
+    }
+}
+.texto_animado_banner {
+    // color: #FFF!important;  COR NO TEMA
+}
+
+#banner_home {
+    background-size: cover !important;
+    background-position-y: top !important;
+    background-position-x: right !important;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    // background: $cor-primaria-3; cor no tema
+
+    @media (min-width: 721px) and (max-width: 1280px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 720px) {
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .titulo_principal {
+        color: #fff;
+        font-size: 2rem;
+        margin-bottom: 10px;
+        min-height: 80px;
+
+        @media (max-width: 720px) {
+            font-size: 2rem;
+        }
+    }
+
+    .subtitulo_banner_home {
+        color: #fff;
+        font-size: 20px;
+    }
+
+
+    .container-codigo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        #show-search-cod {
+            max-width: 200px;
+        }
+    }
+
+    .container_busca_codigo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        transition: all ease 300ms;
+
+        @media(max-width:720px){
+            width: 100%;
+        }
+
+        .input_codigo {        
+            color: $cor-dark3;
+            height: 50px !important;
+            width: 180px;
+            border: 1px solid #ced4da;
+            border-top-left-radius: 8px !important;
+            border-bottom-left-radius: 8px !important;
+            
+            @media(max-width:720px) {
+                width: 100%;
+            }
+        }
+
+        #btn_codigo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: normal;
+            color: #FFF;
+            background-color: $cor-black2;
+            width: 180px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 14px;
+            border-top-right-radius: 8px !important;
+            border-bottom-right-radius: 8px !important;
+
+            &:hover {
+                background-color: #000 !important;
+            }
+        }
+    }
+
+    .active {
+        transition: all ease 300ms;
+        opacity: 1;
+        
+    }
+
+    
+}
+
+.form-row {
+    padding: 0px;
+    width: 90%;
+}
+
+/* height: 136; */
+
+.container_box_busca_home {
+    
+    @media(min-width:768px) { // (md, lg e xl)
+        width: 600px;
+    }
+}
+
+.busca_home {
+    padding-top: 35px;
+    padding-bottom: 50px;
+    border-radius: 8px;
+    width: 100%;
+    margin: auto;
+    -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+        0 8px 10px -7px rgba(0, 0, 0, 0.2);
+
+        @media(max-width:720px){
+            width: 100%;
+        }
+
+        .form-select {
+            border-radius: 8px !important;
+            height: 50px !important;
+            line-height: 32px !important;
+        }
+        .label-form {
+            margin-bottom: 0px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .chosen-single {
+            height: 50px !important;
+            border-radius: 8px !important;
+            line-height: 50px !important;
+            font-size: 14px;
+        }
+        .chosen-container-single .chosen-single div b {
+            margin-top: 12px;
+        }
+        .chosen-container-single .chosen-search input[type="text"] {
+            height: 40px;
+            line-height: 40px;
+            background: none;
+            padding: 8px !important;
+            font-size: 14px;
+        }
+
+       
+}
+
+#input-bairro{
+    
+    &:disabled{
+        background-color: red;
+        cursor: not-allowed;
+    }
+}
+
+#input_valor_min {
+    height: 50px !important;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+#input_valor_max {
+    height: 50px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+}
+
+.btn-cond-form {
+    font-family: $font-regular;
+    margin-top: 10px;
+    color: $cor-primaria;
+    cursor: pointer;
+    transition: all ease 0.2s;
+    &:hover {
+        color: $cor-secundaria;
+    }
+}
+#container-cond {
+    display: block;
+}
+
+.text-list-top {
+    font-size: 10px;
+    color: green;
+}
+//CONTAINER BUSCA ENDERECO / CODIGO
+.container-codigo { 
+    display: none;
+} 
+
+#submit-codigo {
+    display: none;
+}
+.buttom_busca_home {
+    margin-right: 20px;
+}
+
+.modo-busca {
+    font-family: $font-regular;
+    font-size: 14px;
+    color: $cor-dark3;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+//=========== 
+
+
+.img_carrossel_busca_rapida {
+    padding: 20px;
+    max-width: 100px;
+    cursor: pointer;
+    margin: 0 auto;
+    height: auto;
+}
+
+#carrossel_destaques_imoveis {
+    .btn-actions {
+        position: relative;
+        margin: 0;
+        right: -90%;
+        top: 27px;
+    }
+}
+
+.slick-slider .slick-slide {
+    padding: 0 5px;
+}
+
+.card {
+    min-width: 200px;
+}
+
+#call-img {
+    min-height: 241px;
+    width: 100%;
+}
+
+.card-call {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h2 {
+        color: #fff;
+    }
+
+    P {
+        color: #fff;
+    }
+    // height: 100%;
+    // padding-top: 100px;
+    // padding-bottom: 100px;
+}
+
+
+//ALTERAÇÇÃO TEXTOS CARDS
+.card-body {
+    h4 {
+        font-size: 12px;
+        /*line-height: 14px;*/
+        color: $cor-dark2;
+        font-family: $font-regular;
+        margin: 0px;
+    }
+    h3 {
+        color: $cor-dark3;
+        font-family: $font-regular;
+        font-weight: normal;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}
+
+#lista-endereco {
+    position: absolute;
+    z-index: 999;
+}
+
+// CARD DIFERENCIAIS
+
+.box_link_mais_filtros {
+    padding: 5px 5px 5px 0px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+.card-bairros{
+    border-radius: 0;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+
+    img{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-body-bairros{
+        min-width: 150px;
+        padding: 1rem;
+        background: #FFF;
+    }
+
+    .title-bairro{
+        font-size: 1rem;
+        color:$cor-black2;
+    }
+}
+
+#submit-busca {
+    margin-top: 15px;
+    border: none;
+    height: 50px;
+    border-radius: 8px;
+}
+
+//GALERIA PAGINA
+.arrow-left {
+    cursor: pointer;
+    /*  left: 30px;
+            top: 50%;
+            transform: translate(0, -50%);
+            position: absolute;
+            z-index: 9999;
+            position: absolute;*/
+}
+
+.arrow-right {
+    cursor: pointer;
+    /*    right: 30px;
+            top: 50%;
+            transform: translate(0, -50%);
+            position: absolute;
+            z-index: 999999;
+            position: absolute;*/
+}
+
+
+

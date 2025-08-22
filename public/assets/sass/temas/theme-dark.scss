@@ -1,0 +1,756 @@
+// PALETA DE CORES DO PROJETO --------------------------------------------------------------------------------------------------------------------------------
+
+// cores de fundo
+$cor_fundo_1: #121212;
+$cor_fundo_2: #1e1e1e;
+$cor_auxiliar: #fcce00;
+$cor_auxiliar2: #fc9700;
+$cor_auxiliar3: #ffe46c;
+
+//cores dos textos
+$cor_fonte_1: #ffff;
+$cor_fonte_2: #d3d3d3;
+$cor_fonte_3: rgb(197, 197, 197);
+$cor_fonte_4: #f1f1f1;
+$cor_barrinha_titulo : $cor_auxiliar;
+$cor_link: #d3d3d3;
+$cor_link_hover: $cor_auxiliar2;
+
+//cores padroes dos botes
+$cor_botao_back: $cor_auxiliar;
+$cor_botao_texto: #000;
+$cor_botao_vazado_texto: #fff;
+$cor_botao_borda: $cor_auxiliar2;
+
+$cor_botao_back_hover: $cor_auxiliar2;
+$cor_botao_texto_hover: #ffffff;
+$cor_botao_borda_hover: $cor_auxiliar2;
+
+//card dos imoveis
+$back_card_imovel: $cor_fundo_2;
+$color_card_imovel: $cor_fonte_2;
+$border_card_imovel: #000;
+$color_destaque_card_imovel: $cor_auxiliar2;
+
+
+//footer 
+$back_footer_imovel: #0c0c0c;
+$footer_color: $cor_fonte_2;
+$footer_linha_divisao_color: #333;
+
+
+// ELEMENTOS PADROES ------------------------------------------------------------------------------------------------------------
+.back_primario {
+    background-color: $cor_fundo_1 !important;
+}
+
+.back_secundario {
+    background-color: $cor_fundo_2 !important;
+}
+
+.back_auxiliar {
+    background-color: $cor_auxiliar !important;
+}
+
+.color_titulo {
+    color: $cor_fonte_1 !important;
+}
+
+.color_barrinha_titulo::after {
+    background-color: $cor_barrinha_titulo;
+}
+
+.color_texto {
+    color: $cor_fonte_1 !important;
+
+
+    * {
+        color: $cor_fonte_1 !important;
+    }
+}
+
+.color_link {
+    color: $cor_fonte_1 !important;
+}
+
+.color_link:hover {
+    color: $cor_fonte_1 !important;
+}
+
+a {
+    color: $cor_fonte_1 !important;
+}
+
+a:hover {
+    color: $cor_auxiliar2;
+}
+
+.slick-slider-dots {
+    ul {
+        li {
+            button {
+                background-color: #ccc;
+            }
+
+            &.slick-active {
+                button {
+                    background: $cor_auxiliar;
+                    color: $cor_auxiliar2;
+                }
+            }
+        }
+    }
+}
+
+// ELEMENTOS QUE ESTAO EM TODO PROJETO --------------------------------------------------------------------------------------------
+
+// botoes do projeto que tem fundo colorido
+.botao_tema {
+    color: $cor_botao_texto !important;
+    background-color: $cor_botao_back !important;
+    border: 1px solid $cor_botao_borda !important;
+    font-size: 1rem;
+}
+
+// botoes do projeto que tem fundo colorido hover (quando passar o mouse)
+.botao_tema:hover,
+.botao_tema:active,
+.botao_tema:focus,
+.botao_tema:focus-visible {
+    color: $cor_botao_texto_hover !important;
+    background-color: $cor_botao_back_hover !important;
+    border: 1px solid $cor_botao_borda_hover !important;
+}
+
+// botoes do projeto que tem fundo transparente
+.botao_vazado_tema {
+    color: $cor_auxiliar2 !important;
+    background-color: transparent !important;
+    border: 1px solid $cor_botao_borda !important;
+}
+
+// botoes do projeto que tem fundo transparente hover (quando passar o mouse)
+.botao_vazado_tema:hover {
+    color: $cor_botao_texto_hover !important;
+    background-color: $cor_botao_back_hover !important;
+    border: 1px solid $cor_botao_borda_hover !important;
+}
+
+// barrinha abaixo dos titulos
+.barra_bottom_center:after {
+    background-color: $cor_auxiliar2 !important;
+}
+
+// botoes active
+.btn-active {
+    background-color: $cor_auxiliar2 !important;
+    color: #fff !important;
+    border: none;
+}
+
+
+.btn-primario {
+    background-color: $cor_auxiliar2;
+    color: #FFF;
+
+    &:hover {
+        background-color: $cor_auxiliar2;
+        border: none;
+        color: #FFF;
+        -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+            0 2px 4px -1px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.container-paginacao {
+    .active {
+        background-color: $cor_auxiliar; //  COR NO TEMA
+        color: #fff; //  COR NO TEMA
+    }
+}
+
+
+
+// ELEMENTOS DA BUSCA -------------------------------------------------------------------------------------------------------------------
+
+
+#button_check_mapa {
+    background-color: $cor_auxiliar;
+}
+
+
+// elementos dos formularios
+.busca_home {
+    background-color: hsl(0deg 0% 0% / 80%);
+}
+
+.buttom_finalidade_busca_home.btn-active-busca,
+.buttom_finalidade_busca_home:hover,
+#submit-busca {
+    background-color: $cor_auxiliar2 !important;
+    color: #FFF !important;
+}
+
+.buttom_finalidade_busca_home {
+    background-color: $cor_fonte_2 !important;
+    color: #000 !important;
+}
+
+.busca_home .label-form {
+    color: $cor_auxiliar2 !important;
+}
+
+.chosen-container.chosen-with-drop .chosen-drop {
+    background: #121212;
+    border-color: #000;
+}
+
+.chosen-container .chosen-results li.active-result {
+    color: $cor_fonte_1;
+    padding: 8px 5px !important;
+}
+
+.chosen-container .chosen-results li.active-result.result-selected,
+.chosen-container .chosen-results li.highlighted {
+    background-color: $cor_auxiliar2 !important;
+    color: #FFF !important;
+    background-image: none !important;
+}
+
+.chosen-container .chosen-results li.no-results {
+    background: $cor_fundo_2;
+}
+
+input,
+textarea,
+select,
+option,
+.form-select,
+.form-text,
+.chosen-container-single .chosen-single {
+    background-color: $cor_fundo_1 !important;
+    color: $cor_fonte_2 !important;
+    border: 1px solid #2d2d2d !important;
+    font-size: 14px !important;
+}
+
+// CARD DO IMOVEL ---------------------------------------------------------------------------------------------------------------------------
+
+// CSS que fica no card do imovel na home, listagem e em todos os lugares que tiver um card do imovel
+.card_imovel_style {
+    background-color: $back_card_imovel !important;
+    border: 1px solid $border_card_imovel;
+}
+
+.card_imovel_style:hover .container-icon span {
+    color: $cor_fonte_1 !important;
+}
+
+// cor de fundo do card do imovel
+.card_imovel_style .card-footer {
+    background-color: $back_card_imovel !important;
+}
+
+// cores dos textos dentro do card do imovel
+.card_imovel_color {
+    color: $color_card_imovel !important;
+}
+
+//cor do texto em destaque no card do imovel (geralmente a cor destque fica no valor)
+.card_imovel_color_destaque {
+    color: $color_destaque_card_imovel !important;
+}
+
+// lupinha no digite o codigo, no modal de filtro
+.modal-form .container-codigo span {
+    right: 30px !important;
+}
+
+// botao circular de quartos, banhos etc, no modal de filtro
+.btn-circle,
+.btn-circle:hover,
+.btn-circle:active,
+.btn-circle:focus,
+.btn-circle:focus-visible {
+    border: none;
+}
+
+.card .card-body .preco-imovel-card strong {
+    color: $cor_auxiliar2 !important;
+}
+
+
+// HEADER ------------------------------------------------------------------------------------------------------------------------------------------------
+#header {
+    background-color: $cor_fundo_1 !important;
+}
+
+.nav-link {
+    color: $cor_auxiliar !important;
+}
+
+.nav-link:hover {
+    color: $cor_auxiliar2 !important;
+    background-color: $cor_fundo_2 !important;
+}
+
+.back_div_transition_top {
+    background: rgb(18, 18, 18);
+    background: linear-gradient(180deg, rgba(18, 18, 18, 1) 0%, rgba(30, 30, 30, 1) 100%);
+}
+
+.back_div_transition_bottom {
+    background: rgb(30, 30, 30);
+    background: linear-gradient(180deg, rgba(30, 30, 30, 1) 0%, rgba(18, 18, 18, 1) 100%);
+}
+
+.list-titulo {
+    color: $cor_auxiliar3 !important;
+}
+
+.container-social-top-header {
+    img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .ico-rede-social {
+        height: 20px !important;
+        margin: 0 2px;
+    }
+}
+
+
+// HOME  --------------------------------------------------------------------------------------------------------------------------------------------
+// .texto_animado_banner{
+//     color: $cor_fonte_2;
+// }
+
+.buttom-destaque:focus {
+    background-color: $cor_auxiliar2 !important;
+}
+
+.titulo_principal {
+    color: $cor_fonte_2 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: $cor_auxiliar2 !important;
+}
+
+
+//ELEMENTOS DA LISTAGEM ------------------------------------------------------------------------------------------------------------------------------
+.modal-form #corpo-filtro,
+#container_lista_imoveis_left {
+    background-color: $cor_fundo_2 !important;
+}
+
+#container_lista_imoveis_right {
+    background-color: $cor_fundo_1 !important;
+}
+
+.texto-topo-busca {
+    color: $cor_fonte_1 !important;
+}
+
+#corpo-filtro h6 {
+    color: $cor_fonte_1 !important;
+}
+
+// Esse é o botão onde ficam listados os TIPOS DE IMOVEIS
+.botao_tipo_busca {
+    color: $cor_fonte_2 !important;
+    background-color: $cor_fundo_1 !important;
+
+    * {
+        color: $cor_fonte_2 !important;
+        background-color: $cor_fundo_1 !important;
+    }
+}
+
+// Esse é o botão onde ficam listados os TIPOS DE IMOVEIS hover (quando passar o mouse)
+.botao_tipo_busca:hover {
+    color: $cor-fonte-1 !important;
+}
+
+// Essa é a cor da borda que aparece no botão FINALIDADE
+.listagem_filtro_item_active {
+    background-color: $cor_auxiliar2 !important;
+    border: 1px solid $cor_auxiliar2 !important;
+}
+
+#corpo-filtro {
+
+    h6,
+    span,
+    select,
+    input,
+    .corpo-check,
+    .corpo-check-extra {
+        color: $cor_fonte_2;
+    }
+}
+
+.btn-active-busca span,
+.buttom_finalidade_busca_home:hover span {
+    color: $cor_fonte_1 !important;
+}
+
+.finalidade-busca {
+    color: $cor_botao_texto !important;
+}
+
+.imovel-check-active {
+    background-color: $cor_auxiliar2 !important;
+    border-color: $cor_auxiliar2 !important;
+}
+
+.imovel-check {
+    border: 1px solid $cor_fonte_2;
+    margin-right: 10px;
+}
+
+.lista-bairros {
+    background-color: $cor_fundo_1;
+    width: 99%;
+}
+
+// PAREI AQUI
+
+input[type=checkbox],
+input[type=radio] {
+    accent-color: $cor_auxiliar2;
+}
+
+input[type=checkbox]:not(:checked) {
+    background-color: $cor_fundo_2 !important;
+}
+
+input[type="checkbox"]:checked {
+    appearance: revert;
+    accent-color: $cor_auxiliar2;
+    color: #FFF !important;
+}
+
+
+
+//LISTAGEM DE CONDOMÍNIOS -------------------------------------------------------------------------------------------------------------------
+
+.body-condominio {
+    background-color: $cor_fundo_1;
+}
+
+.btn-paginacao {
+    color: $cor_fonte_1;
+}
+
+.container_loader {
+    color: $cor_fonte_1;
+}
+
+#section_listagem_condominios {
+    background-color: $cor_fundo_1;
+}
+
+#corpo-busca {
+    padding: 2rem;
+    background-color: $cor_fundo_2;
+    color: $cor_fonte_1;
+}
+
+
+.card_condominio {
+    background-color: $cor_fundo_2;
+    color: $cor_fonte_1;
+}
+
+.filtro-sobre-imagem {
+    background-color: rgba($color: #000000, $alpha: .5);
+}
+
+.btn-ligth {
+
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid $cor_auxiliar;
+    }
+}
+
+.btn-ver-imoveis {
+    background-color: $cor_auxiliar;
+    color: $cor_fonte_4 !important;
+}
+
+.extras-active {
+    color: $cor_fonte_1;
+}
+
+
+//DETALHE DO CONDOMÍNIO -------------------------------------------------------------------------------------------------------------------
+
+.body-detyalhe-condominio {
+    background-color: $cor_fundo_1;
+    color: $cor_fonte_2
+}
+
+.btn-acao-rolagem {
+    color: $cor_fonte_2;
+
+    &:hover {
+        color: $cor_fonte_2;
+    }
+}
+
+.extras-active {
+    color: $cor_fonte_2;
+}
+
+.container-mediana {
+    background-color: $cor_fundo_2;
+}
+
+.btn-arrow {
+    background-color: $cor_fundo_2 !important;
+}
+
+// ANUNCIE SEU IMÓVEL -------------------------------------------------------------------------------------------------------------------
+#anuncie_seu_imovel {
+    color: $cor_fonte_1;
+}
+
+.section_content_passo_a_passo {
+    color: $cor_fonte_1;
+
+    .text-passos {
+        color: $cor_fonte_1;
+    }
+}
+
+.form-anuncie-seu-imovel {
+    background-color: $cor_fundo_2;
+}
+
+.btn-enviar-curriculo {
+    color: $cor-fonte-4 !important;
+}
+
+
+// OUVIDORIA --------------------------------------------------------------------------------------------------------------------------
+.wrap_conteudo_texto {
+    color: $cor_fonte_1 !important;
+}
+
+
+
+// DETALHE DO IMOVEL -------------------------------------------------------------------------------------------------------------------
+.color_titulo_section_detalhes {
+    color: $cor_auxiliar2 !important;
+    margin-top: 20px;
+    font-size: 1rem !important;
+}
+
+.color_titulo {
+    color: $cor_fonte_2 !important;
+}
+
+.data-active {
+    background-color: $cor_auxiliar;
+    color: #fff !important;
+}
+
+#cod-principal {
+    color: $cor_auxiliar;
+    font-size: 18px;
+}
+
+.botao_header_mobile {
+    background: $cor_auxiliar;
+
+    &:hover {
+        background: $cor_auxiliar;
+        color: #FFF;
+    }
+}
+
+#call-imovel-ideal {
+    background-color: $cor_auxiliar2;
+}
+
+.text-politica-privaciade {
+    color: $cor_fonte_4;
+    font-size: 13px;
+
+    a {
+        color: $cor_fonte_4 !important;
+    }
+}
+
+.form-control {
+    color: $cor_fonte_2 !important;
+}
+
+.politica-privaciade {
+    color: #FFF!important;
+}
+
+
+
+// BLOG -------------------------------------------------------------------------------------------------------------------------------------
+
+.btn-search {
+    background-color: $cor_auxiliar2;
+    color: #ffff;
+
+    svg {
+        fill: #ffff;
+    }
+}
+
+.container_titulo_blog {
+    color: #fff;
+}
+
+.container_texto {
+
+    span,
+    div,
+    i,
+    label {
+        color: #FFF !important;
+    }
+
+}
+
+.btn-voltar {
+    border: none;
+    border: 1px solid $cor_fonte_2;
+    background-color: #FFF;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    span {
+        color: $cor_botao_texto
+    }
+}
+
+.container-btn {
+    .active-button {
+        background-color: #f1f1f1;
+        border-bottom: 2px solid $cor_auxiliar !important;
+    }
+}
+
+.container_date_dia {
+    background-color: $cor_auxiliar !important;
+}
+
+
+.lista-categorias {
+    .active {
+        border-bottom: 1px solid $cor_auxiliar !important;
+        color: $cor_auxiliar !important;
+    }
+
+    .number {
+        background-color: $cor_auxiliar !important;
+        color: #FFF;
+    }
+}
+
+.card_blog {
+    color: #FFF !important;
+    background-color: $cor_fundo_2;
+}
+
+.lista-categorias {
+    color: #FFF;
+}
+
+.title_blog {
+    color: #FFF !important;
+}
+
+.btn_recente_popular {
+    background-color: $cor_fundo_2 !important;
+    color: $cor_auxiliar;
+}
+
+.card-mini-post {
+    .contain {
+        background-color: $cor_fundo_2 !important;
+    }
+}
+
+.btn_limpar_filtro {
+    background-color: #c1100d;
+    color: #FFF;
+}
+
+
+// END BLOG -------------------------------------------------------------------------------------------------------------------------------------
+
+// ELEMENTOS DO FOOTER ------------------------------------------------------------------------------------------------------------------------
+
+//cor de fundo do rodape
+.back_footer_imovel {
+    background-color: $back_footer_imovel !important;
+}
+
+
+//cor da linha de divisao
+.footer_linha_divisao_color {
+    border-top: 1px solid $footer_linha_divisao_color !important;
+}
+
+.links_footer span:hover,
+.ico-rede-social:hover {
+    color: $cor_auxiliar !important;
+}
+
+#footer {
+
+    p,
+    span,
+    svg,
+    h6,
+    a {
+        color: $cor_fonte_2 !important;
+    }
+
+    a:hover,
+    a:hover svg,
+    a:hover span {
+        color: $cor_auxiliar !important;
+    }
+}
+
+.ico-rede-social:hover {
+    color: $cor_auxiliar !important;
+}
+
+// linha do menu footer no menu mobile
+#menu-mobile .modal-footer {
+    border-top: 1px solid $cor_fundo_1 !important;
+}
+
+
+// elementos da pagina CONTATO
+.link_box_contato {
+    color: $cor_fonte_4 !important;
+}
+
+
+// elementos da pagina do imóvel
+.btn-compartilhamento-wpp {
+    border: 1px solid $cor_fonte_1 !important;
+}
+
+.box_color_tema {
+    background-color: $cor_auxiliar; //cor no tema
+    color: #FFF;
+}

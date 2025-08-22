@@ -1,0 +1,150 @@
+@import "../padrao";
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+
+}
+
+.container-posts-populares, .container-posts-recentes {
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.posts_destaques_active{
+    display: flex;
+}
+
+.card-mini-post {
+    display: flex;
+    width: 100%;
+    border-radius: .2rem;
+
+    img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+    }
+    .contain {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        padding: .5rem;
+    }
+    span {
+        font-size: 14px;
+    }
+}
+
+
+.lista-categorias {
+    margin-top: 2rem;
+    list-style: none;
+
+    h5 {
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .linha {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .5rem;
+        border-bottom: 1px solid #CCC;
+        height: 30px;
+    }
+
+    .active{
+        font-weight: bold;
+        // border-bottom: 1px solid $cor-primaria;
+        // color: $cor-primaria;
+    }
+
+    .number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: .2rem;
+        // background-color: $cor-primaria;
+        color: #FFF;
+
+    }
+
+}
+
+.container-btn {
+    display: flex;
+    margin-bottom: 1rem;
+
+
+    button {
+        flex: 1;
+        background-color: transparent;
+        height: 50px;
+        border: none;
+    }
+
+    .active-button {
+        // background-color: #f1f1f1;  cor no tema
+        border-bottom: 2px solid $cor-primaria;
+    }
+}
+
+
+.btn_limpar_filtro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    height: 40px;
+    border-radius: .5rem;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    // background: #e6e6e6;
+    
+}
+
+
+#container_geral_paginacao {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cccc;
+    border-radius: 6px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.container-paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .active {
+        // background-color: $cor-primaria; ESTÁ NO TEMA
+        color: #fff;
+    }
+}

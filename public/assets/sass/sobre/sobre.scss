@@ -1,0 +1,86 @@
+@import "../padrao";
+
+#carrosel-sobre {
+    position: relative;
+}
+
+.img-carrossel-sobre{
+    width: 481px;
+    height: 301px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.img-galeria{
+    margin-right: 5px;
+}
+
+.arrow-images {
+    margin-top: 0px;
+}
+.arrow-left {
+    left: 30px;
+    // top: 50%;
+    transform: translate(0, -415%);
+    position: absolute;
+    z-index: 0;
+    cursor: pointer;
+}
+.arrow-right {
+    right: 30px;
+    // top: 50%;
+    transform: translate(0, -415%);
+    position: absolute;
+    z-index: 0;
+    cursor: pointer;
+}
+
+#call-to-action-home {
+    background-image: url(../../img/sobre/call-to-action.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    background-color: $cor-primaria;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+#call-img {
+    min-height: 241px;
+    width: 100%;
+}
+
+.card-call {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h2 {
+        color: #fff;
+    }
+
+    P {
+        color: #fff;
+    }
+    // height: 100%;
+    // padding-top: 100px;
+    // padding-bottom: 100px;
+}
+
+.wrap_video_sobre {
+    background-color: #000;
+}
+.img_principal_empresa {
+    width: 590px;
+    float: left;
+    margin: 0px 14px 10px 0px;
+    height: auto;
+
+    @media(min-width:721px) and (max-width:1500px){
+        width: 50%;
+    }
+
+    @media(max-width:720px){
+        width: 100%;
+    }
+}

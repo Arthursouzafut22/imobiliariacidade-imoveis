@@ -1,0 +1,30 @@
+@import "../padrao";
+
+.form-ouvidoria {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 16px 33px rgba(34, 35, 40, 0.15);
+    border-radius: 4px;
+    font-family: $font-regular;
+
+    h6{
+        margin-top: 10px;
+    }
+
+    .container-check{
+        display: flex;
+        padding: 10px;
+        span{
+            margin-left: 10px;
+        }
+    }
+
+    strong{
+        color:red;
+        font-size: 0.8rem;
+    }
+}
+
+#alert-form {
+    display: none;
+}

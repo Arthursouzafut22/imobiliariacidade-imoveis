@@ -1,0 +1,17 @@
+image: atlassian/default-image:2
+
+pipelines:
+  default:
+    - step:
+        name: Pipeline Padrão
+        script:
+          - echo "Rodando comando git pull no servidor"
+          - ssh -v -o StrictHostKeyChecking=no $SSH_HOST "cd public && git pull"
+ 
+  custom:
+    initial-deploy:
+      - step:
+          name: Deploy Inicial
+          script:
+          - echo "Rodando comandos iniciais no servidor"
+          - ssh -v -o StrictHostKeyChecking=no $SSH_HOST "mv public publicOld && mkdir public && cd public && git init && git remote add origin $GIT_URL && git fetch && git checkout main"

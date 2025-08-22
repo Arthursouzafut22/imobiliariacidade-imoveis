@@ -1,0 +1,138 @@
+@import "../padrao";
+
+.titulo_principal{
+    font-size: 3rem;
+    position: absolute;
+
+    @media(max-width:720px){
+        font-size: 1.5rem;
+    }
+}
+
+#container-icons-banner{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    h2{
+        margin-bottom: 30px;
+    }
+
+    .btn-primario{
+        color:#FFF!important;
+        min-width: 200px;
+    }
+
+    .card-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+
+        p{
+            text-align: center;
+            font-size: 1rem;
+        }
+    }
+
+    img{
+        width: 100px;
+    }
+}
+
+.call-to-action{
+    @media(max-width: 900px){
+        display: none!important;
+    }
+}
+
+.titulo_form {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.form-anuncie-seu-imovel {
+    padding: 40px;
+    // top: 150px;
+    box-shadow: 0px 16px 33px rgba(34, 35, 40, 0.15);
+    border-radius: 4px;
+    font-family: $font-regular;
+
+    h6{
+        margin-top: 10px;
+    }
+
+    .container-check{
+        display: flex;
+        padding: 10px;
+        span{
+            margin-left: 10px;
+        }
+    }
+
+    strong{
+        color:red;
+        font-size: 0.8rem;
+    }
+}
+
+#gif-form {
+    display: none;
+    width: 50px;
+    height: 40px;
+}
+
+#alert-form {
+    display: none;
+}
+
+#container-texto-banner {
+    min-height: 542px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+
+    h1 {
+        font-size: 35px;
+        line-height: 62px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: $font-regular;
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        margin-bottom: 30px;
+    }
+}
+
+// CARD DIFERENCIAIS
+
+tainer-cards-diferencial .card p {
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: normal;
+
+    @media (max-width: 1280px) {
+        font-size: 16px;
+    }
+}
+
+.section_content_passo_a_passo {
+
+    margin-top: 20px;
+
+    .titulo-num {
+        font-family: $font-bold;
+        font-size: 62px;
+        line-height: 62px;
+        // color: $cor-primaria; COR NO TEMA
+        font-weight: 900;
+    }
+
+    p{
+        font-size: 1.2rem;
+        // color:$cor-dark3 COR NO TEMA
+    }
+}

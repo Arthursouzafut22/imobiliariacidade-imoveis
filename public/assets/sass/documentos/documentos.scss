@@ -1,0 +1,90 @@
+@import "../padrao";
+
+
+
+
+
+
+
+
+a.btn {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#container-texto {
+    background-color: #f4f6fa;
+
+    h2 {
+        color: $cor-dark3;
+        font-size: 40px;
+        font-weight: 900;
+        margin-top: 50px;
+        margin-bottom: 33px;
+    }
+
+    p {
+        text-align: justify;
+        font-family: $font-regular;
+        color: $cor-dark3;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+}
+
+#call-to-action-home {
+    background-image: url(../../img/home/img-call.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    background-color: $cor-primaria;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#call-img {
+    min-height: 241px;
+    width: 100%;
+}
+
+// CARD DIFERENCIAIS
+
+@media (max-width: 320px) {
+    #container-texto h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    #container-texto h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 425px) {
+    #container-texto h2 {
+        font-size: 32px;
+    }
+}
+
+@media (mix-width: 768px) {
+}
+
+.card-body {
+    padding: 20px;
+    p {
+        text-align: initial !important;
+        font-size: 17px;
+    }
+    h3 {
+        margin-bottom: 30px !important;
+    }
+}
+
+a.btn {
+    color: #fff;
+}
+
+.btn-primario {
+}

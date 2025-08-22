@@ -1,0 +1,71 @@
+@import "../padrao";
+
+
+#container-favoritos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding-top: 1rem;
+}
+
+a.btn-light {
+    text-decoration: none;
+    color: $cor-primaria!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 159px;
+}
+
+.icon-nao-encontrado{
+    margin-bottom: 20px;
+}
+
+.text-nao-encontrado {
+    font-family: $font-black;
+    font-size: 20px;
+    line-height: 28px;
+    color: $cor-black2
+    
+}
+
+#container-erro{
+    min-height:30vh;
+    display: none;
+}
+
+#container-gif{
+    height: 50vh;
+    display: none;
+}
+
+.card {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.container-alert {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-imoveis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $cor-alert;
+    color: #fff;
+    height: 100px;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 350px;
+    box-shadow: 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%), 0 2px 4px -1px rgb(0 0 0 / 30%);
+
+    :first-child {
+        margin-right: 10px;
+    }
+}

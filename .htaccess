@@ -1,0 +1,29 @@
+RewriteEngine On
+
+# REDIRECIONA PARA HTTPS
+RewriteCond %{HTTP_HOST} !localhost [NC]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#redireciona para WWW caso venha sem. 
+#não redireciona caso seja portalunsoft
+#RewriteCond %{HTTP_HOST} !localhost [NC]
+#RewriteCond %{HTTP_HOST} !portalunsoft [NC] 
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
+
+
+RewriteBase /
+# Caminho da raiz no localhost
+RewriteCond %{HTTP_HOST} localhost [NC]
+RewriteRule ^((?!public/).*)$ /estiloimobiliaria2025/public/$1 [L,NC] 
+
+# Caminho da raiz se o site estiver online
+# KingHost/Amazon/Umbler 
+# Trocar apenas ReWriteRule
+RewriteCond %{HTTP_HOST} !localhost [NC]
+RewriteRule ^((?!public/).*)$ /public/$1 [L,NC] 
+
+
+
