@@ -1,33 +1,24 @@
-## Instalação
-Você pode clonar este repositório OU baixar o .zip
+<img width="1903" height="901" alt="image" src="https://github.com/user-attachments/assets/68cfda63-e004-4ce2-bf70-b8ccf9e7206d" />
 
-Ao descompactar, é necessário rodar o **composer** pra instalar as dependências e gerar o *autoload*.
+## 🏠 Chitolina Imóveis
 
-Vá até a pasta do projeto, pelo *prompt/terminal* e execute:
-> composer install
+Sistema web desenvolvido para a Chitolina Imóveis durante meu trabalho na Universal Software.
+O objetivo do projeto é gerenciar e exibir imóveis de forma organizada, permitindo busca e navegação intuitiva para os usuários.
 
-Depois é só aguardar.
+## 🚀 Tecnologias utilizadas
 
-## Configuração
-Todos os arquivos de **configuração** e aplicação estão dentro da pasta *src*.
+PHP – Backend
 
-As configurações de Banco de Dados e URL estão no arquivo *src/Config.php*
+jQuery – Frontend (interações dinâmicas)
 
-É importante configurar corretamente a constante *BASE_DIR*:
-> const BASE_DIR = '/**PastaDoProjeto**/public';
+MySQL – Banco de dados
 
-## Uso
-Você deve acessar a pasta *public* do projeto.
+## ✨ Funcionalidades
 
-O ideal é criar um ***alias*** específico no servidor que direcione diretamente para a pasta *public*.
+Cadastro e listagem de imóveis
 
-## Modelo de MODEL
-```php
-<?php
-namespace src\models;
-use \core\Model;
+Busca e filtragem de imóveis por categoria/localização
 
-class Usuario extends Model {
+Exibição de detalhes do imóvel
 
-}
-```
+Painel administrativo para gerenciamento
