@@ -7,7 +7,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 
 // ATIVAÇÃO DO CHAT
 define('CHAT', 0); // 1 para ativado e 0 para desativado
-define('ROTA', 'chitolina');
+define('ROTA', 'imobiliariacidade');
 define('MULTIPLOS_WHATSAPP', false);
 
 //codigo da unidade que sera enviado o lead de captacao.
@@ -16,11 +16,11 @@ define('CODIGO_UNIDADE', '4381'); //colocar código da unidade principal
 //se for ambiente localhost
 if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) {
 
-    $BASE_URL = 'http://' . $_SERVER['HTTP_HOST'] . '/chitolina2025/';
+    $BASE_URL = 'http://' . $_SERVER['HTTP_HOST'] . '/imobiliariacidade/';
     define('AREA_CLIENTE', 'https://cliente.portalunsoft.com.br/' . ROTA . '');
     define('BASE_URL_CMS', 'http://localhost/cms.sitesuniversal/');
     define('VERSAO', time());
-    define('BASE_DADOS', 'chitolina');
+    define('BASE_DADOS', 'imobiliariacidade');
     // define('BASE_DADOS', 'premium2025');
 }
 
