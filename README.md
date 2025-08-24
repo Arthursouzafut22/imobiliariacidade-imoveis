@@ -1,8 +1,9 @@
-<img width="1903" height="901" alt="image" src="https://github.com/user-attachments/assets/68cfda63-e004-4ce2-bf70-b8ccf9e7206d" />
+<img width="1902" height="910" alt="image" src="https://github.com/user-attachments/assets/e399cb77-6d86-43eb-b815-8b1f68e47291" />
 
-## 🏠 Chitolina Imóveis
 
-Sistema web desenvolvido para a Chitolina Imóveis durante meu trabalho na Universal Software.
+## 🏠 Imobiliária Cidade
+
+Sistema web desenvolvido para a imobiliária cidade durante meu trabalho na Universal Software.
 O objetivo do projeto é gerenciar e exibir imóveis de forma organizada, permitindo busca e navegação intuitiva para os usuários.
 
 ## 🚀 Tecnologias utilizadas
